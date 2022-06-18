@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/Contact.css">
+  <link rel="icon" href="img/logo.ico" image="/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="container container-fluid" id="container-navbar">
+      <nav class="navbar fixed-top bg-white ">
+        <div class="container-lg">
+          <!-- ЛОГО -->
+          <a class="navbar-brand" href="#">
+            <img src="img/svg/logo.svg">
+          </a>
+          <!-- БУРГЕР -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <img src="img/svg/menu.svg">
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class=" dropstart offcanvas-header ">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="About.html">About</a>
+                  <a class="nav-link active" aria-current="page" href="Blog.html">Blog Page</a>
+                  <a class="nav-link active" aria-current="page" href="Contact.html">Contact Us</a>
+                </li>
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  About US
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="#">About</a></li>
+                  <li><a class="dropdown-item" href="#">What We Do</a></li>
+                  <li><a class="dropdown-item" href="#">Project</a></li>
+                  <li><a class="dropdown-item" href="#">How It Work With Us</a></li>
+                </ul>
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Follow US
+                </a>
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown"></ul>
+                </li>
+              </ul>
+            </div>
+      </nav>
+    </div>
+    <!-- ПЕРВЫЙ БЛОК -->
+    <section class="one">
+      <div class="container-fluid container">
+        <div class="img-background">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <h1>Contact Us</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <!-- ВТОРОЙ БЛОК -->
+    <section class="two">
+      <div class="container-fluid container">
+        <div class="img-background">
+          <div class="row align-items">
+            <div class="col-6">
+              <div class="inf">
+                <div class="img-ceimg-ce">
+                  <img src="img/Group.png" alt="">
+                </div>
+                <div class="address">
+                  <h3>ADDRESS</h3>
+                  <p>
+                    Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.
+                  </p>
+                </div>
+                <div class="phone">
+                  <h3>PHONE</h3>
+                  <div class="tel1">
+                    <img src="img/svg/ic_phone.svg" alt="">
+                    <p>
+                      +62-812-7313-4321
+                    </p>
+                  </div>
+                  <div class="tel1">
+                    <img src="img/svg/ic_phone.svg" alt="">
+                    <p>
+                      +62-817-000-1234
+                    </p>
+                  </div>
+                  <div class="mail">
+                    <h3>ONLINE SERVICE</h3>
+                    <div class="tel1">
+                      <img src="img/svg/ic_language.svg" alt="">
+                      <p>
+                        www.afrianska.com
+                      </p>
+                    </div>
+                    <div class="tel1">
+                      <img src="img/svg/ic_email.svg" alt="">
+                      <p>
+                        hello.afrian@gmail.com
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="forms">
+              <div class="col-6">
+                <h3>SEND US MESSAGE</h3>
+                <form action="">
+                  <div class="infor">
+                    <div class="mb-3">
+                      <label for="formGroupExampleInput" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="formGroupExampleInput2" class="form-label">Email</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">SUBMIT</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- ТРЕТИЙ БЛОК -->
+    <section class="three">
+      <div class="container-fluid container">
+        <div class="img-background">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div style="position:relative;overflow:hidden;">
+                <a href="https://yandex.ru/maps/org/mediasoft/201529235136/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:0px;">MediaSoft</a>
+                <a href="https://yandex.ru/maps/195/ulyanovsk/category/software_companies/184105776/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:14px;">Программное обеспечение в Ульяновске</a>
+                <a href="https://yandex.ru/maps/195/ulyanovsk/category/new_technologies/184106206/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:28px;">Новые технологии в Ульяновске</a>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCUJRThzdA" width="940" height="480" frameborder="1"
+                  allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!-- ЧЕТВЕРТЫЙ БЛОК -->
+    <div class="six-one">
+      <section class="six-one-txt">
+        <div class="container-fluid container">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h3>Intersted to woek
+                with our team?</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-primary">
+                Let’s Talk
+                <!--  -->
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="line"></div>
+      <footer class="footer">
+        <div class="mt-5 pt-5 pb-5 footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-xs-12 about-company">
+                <div class="logo">
+                  <a class="navbar-brand" href="#">
+                    <img src="img/svg/logo2.svg">
+                  </a>
+                  <h2> Afrianska</h2>
+                </div>
+                <ul class="m-0 p-0">
+                  <li><a href="#">
+                      <div class="a">
+                        <div class="a-p1">
+                          <p>A.</p>
+                        </div>
+                        <div class="a-p2">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                      </div>
+                    </a></li>
+                  <li><a href="#">
+                      <div class="a">
+                        <div class="a-p1">
+                          <p>T.</p>
+                        </div>
+                        <div class="a-p2">
+                          <p>+62-812-7313-4321</p>
+                        </div>
+                      </div>
+                    </a></li>
+                  <li><a href="#">
+                      <div class="a">
+                        <div class="a-p1">
+                          <p>E</p>
+                        </div>
+                        <div class="a-p2">
+                          <p>hello.afrian@gmail.com</p>
+                        </div>
+                      </div>
+                    </a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-xs-12 links">
+                <h4 class="mt-lg-0 mt-sm-3">About US</h4>
+                <ul class="m-0 p-0">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">What We Do</a></li>
+                  <li><a href="#">Project</a></li>
+                  <li><a href="#">How It Work With Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-xs-12 location">
+                <h4 class="mt-lg-0 mt-sm-4">Follow US</h4>
+                <ul class="m-0 p-0">
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col copyright">
+                <p class=""><small class="text-white-50">2019 © Afrianska. All rights reserved.</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

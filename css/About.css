@@ -1,0 +1,1662 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Galien', 'Gilroy';
+    src: local('Galien'), local('Gilroy'),
+        url(/fonts/font/drive-download-20220602T171226Z-001/TTF/),
+        url(/fonts/font/Gilroy-20220602T175518Z-001/Gilroy/TTF/);
+}
+
+/* .container {
+    max-width: 940px !important;
+} */
+
+#container-navbar {
+    max-width: 1240px !important;
+}
+
+header {
+    background: linear-gradient(rgb(255, 255, 255), #86c6ff50);
+    max-height: 768px !important;
+}
+
+/* -------------------------------Открывающееся меню---------------------------- */
+
+.offcanvas-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.offcanvas {
+    color: #fff;
+    background-color: #5A98D0;
+    border-radius: 50px 0px 0px 0px;
+    --bs-offcanvas-border-color: none;
+    --bs-offcanvas-width: 394px;
+}
+
+.navbar {
+    --bs-navbar-color: none;
+    --bs-navbar-hover-color: none;
+    --bs-navbar-disabled-color: none;
+    --bs-navbar-active-color: none;
+    padding: 0;
+}
+
+.nav-link {
+    font-family: 'Gilroy';
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 49px 0 0px 50px;
+}
+
+#offcanvasNavbarDropdownA {
+    margin: 16px 0 16px 50px;
+}
+
+.dropdown-item {
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+}
+
+.dropdown-menu {
+    --bs-dropdown-color: none;
+    --bs-dropdown-bg: none;
+    --bs-offcanvas-border-color: none;
+    --bs-dropdown-border-color: none;
+    margin: 0 0 16px 50px;
+}
+
+.btn-close {
+    background: url(../img/svg/close.svg) center/1em auto no-repeat;
+    width: 22px;
+    height: 22px;
+    padding: 29px 18px;
+    opacity: 100%;
+}
+
+/* --------------------------------------------Шапка-------------------------------------------------- */
+
+.navbar-toggler-icon {
+    background-image: url(../img/Vector.png);
+}
+
+.navbar-toggler {
+    padding: 0;
+    margin-top: 56px;
+    margin-bottom: 58px;
+    border: none;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------Первый блок-------------------------------------------- */
+
+.img-background {
+    max-width: 100%;
+    margin-top: 113px;
+}
+
+.one .col-5 img {
+    max-width: 100%;
+}
+
+.one .col-7 h1 {
+    color: #1F3F68;
+    font-family: 'Galien';
+    font-size: 64px;
+    font-weight: bold;
+    max-width: 510px;
+}
+
+.one .col-7 p {
+    font-family: 'Gilroy';
+    font-size: 16px;
+    max-width: 425px;
+    height: auto;
+    margin-top: 32px;
+}
+
+.one .col-7,
+.two .col-5 {
+    padding-left: 180px;
+}
+
+/* Кнопка */
+.one .btn,
+.six .btn,
+.one .btn p {
+    background-color: #5A98D0;
+    box-shadow: 5px 10px 20px rgb(53 110 173 / 20%);
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 190px;
+    border: none;
+    padding: 15px 48px;
+    margin-top: 71px;
+
+}
+
+.btn:hover,
+.six .btn:hover {
+    border: none;
+    background-color: #1F3F68;
+    color: #fff;
+}
+
+
+/* --------------------------------------------Адаптив для первого блока-------------------------------------------- */
+
+@media only screen and (max-width: 576px) {
+
+    .img-background {
+        margin-top: 150px;
+    }
+
+    .one .col-7 h1 {
+        font-size: 20px;
+    }
+
+    .one .col-7 p {
+        font-size: 8px;
+        margin: 5px 0;
+    }
+
+    .one .col-7 {
+        padding-left: 40px;
+    }
+
+    .one .btn,
+    .six .btn,
+    .one .btn p {
+        margin-top: 10px;
+        padding: 5px 15px;
+        margin-bottom: 30px;
+        font-size: 8px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .img-background {
+        margin-top: 130px;
+    }
+
+    .one .col-7 h1 {
+        font-size: 35px;
+    }
+
+    .one .col-7 p {
+        font-size: 12px;
+        margin: 20px 0;
+    }
+
+    .one .col-7 {
+        padding-left: 25px;
+    }
+
+    .one .btn,
+    .six .btn,
+    .one .btn p {
+        margin-top: 10px;
+        padding: 5px 15px;
+        margin-bottom: 12px;
+        font-size: 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .img-background {
+        margin-top: 140px;
+    }
+
+    .one .col-7 h1 {
+        font-size: 40px;
+    }
+
+    .one .col-7 p {
+        font-size: 14px;
+        margin: 30px 0;
+    }
+
+    .one .col-7 {
+        padding-left: 50px;
+    }
+
+    .one .btn,
+    .six .btn,
+    .one .btn p {
+        margin-top: 18px;
+        padding: 15px 25px;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .img-background {
+        margin-top: 80px;
+    }
+
+    .one .col-7 h1 {
+        font-size: 58px;
+        margin-top: 100px;
+    }
+
+    .one .col-7 p {
+        font-size: 16px;
+        margin: 40px 0;
+    }
+
+    .one .col-7 {
+        padding-left: 90px;
+    }
+
+    .one .btn,
+    .six .btn,
+    .one .btn p {
+        margin-bottom: 190px;
+        padding: 15px 48px;
+        margin-top: 71px;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .one .col-7 h1 {
+        font-size: 64px;
+    }
+
+    .one .col-7 p {
+        font-size: 16px;
+        margin: 40px 0;
+    }
+
+    .one .col-7 {
+        padding-left: 195px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------Второй блок-------------------------------------------- */
+
+.two h2 {
+    width: 280px;
+    color: #316099;
+    font-family: 'Gilroy';
+    font-size: 36px;
+    letter-spacing: 0;
+    margin-top: 200px;
+    margin-left: -100px;
+    font-weight: 500;
+}
+
+.two .card {
+    max-width: 380px;
+    margin: 200px 0 0 90px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    border: none;
+}
+
+.two .card img {
+    max-width: 182px;
+    max-height: 132px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#card1 {
+    max-width: 182px;
+    max-height: 132px;
+}
+
+#card2 {
+    max-width: 224px;
+    max-height: 197px;
+    margin-top: -20px;
+}
+
+#card3 {
+    max-width: 156px;
+    max-height: 131px;
+}
+
+.two .card-title {
+    max-width: 257px;
+    color: #1F3F68;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.two .col-6 {
+    max-width: 530px;
+    align-content: center;
+}
+
+.two .card-text {
+    color: #1F3F68;
+    max-width: 284px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.two .card-title,
+.card-text {
+    padding-left: 10px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.two .btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 160px;
+    background-color: #fff;
+    color: #5A98D0;
+    border: none;
+    font-family: 'Gilroy';
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+/* --------------------------------------------Адаптив для ВТОРОГО блока-------------------------------------------- */
+
+@media only screen and (max-width: 576px) {
+    .two .col-6 {
+        width: 90%;
+    }
+
+    .two h2 {
+        margin-top: 40px;
+        font-size: 20px;
+        max-width: 90%;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .two .row {
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    .two .card {
+        margin: 50px 0 0 0;
+    }
+
+    .two .card-title {
+        font-size: 16px;
+    }
+
+    .two .card-text {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width: 576px) {
+    .two .col-6 {
+        width: 70%;
+    }
+
+    .two h2 {
+        margin-top: 40px;
+        font-size: 30px;
+        max-width: 90%;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .two .card {
+        margin: 50px 0 0 0;
+
+    }
+
+    .two .card-title {
+        font-size: 17px;
+    }
+
+    .two .card-text {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .two h2 {
+        margin-top: 130px;
+    }
+
+    .two .col-6 {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* align-items: center;
+        flex-direction: column;
+        align-items: stretch;
+        align-content: stretch; */
+    }
+
+    .two .card {
+        margin-top: 130px;
+    }
+
+    .two .card-title {
+        font-size: 18px;
+    }
+
+    .two .card-text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .two .col-6 {
+        max-width: 380px;
+        /* margin-left: 100px; */
+        margin-right: 100px;
+    }
+
+    .two h2 {
+        margin-top: 140px;
+        font-size: 36px;
+        max-width: 358px;
+        margin-left: -100px;
+        /* margin-left: 10px; */
+        width: 100%;
+
+    }
+
+    .two .card-title {
+        font-size: 20px;
+    }
+
+    .two .card-text {
+        font-size: 16px;
+    }
+
+    .two .row {
+        justify-content: flex-end;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .two h2 {
+        margin-left: -178px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------Третий блок-------------------------------------------- */
+
+
+
+.three h3 {
+    font-family: 'Gilroy';
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    margin: 200px 0 150px 100px;
+    max-width: 227px;
+}
+
+.three p {
+    font-family: 'Gilroy';
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #0c0e0f;
+    opacity: 0.6;
+    margin: 200px 440px 150px 100px;
+    max-width: 540px;
+}
+
+
+/* --------------------------------------------Адаптив для Третьего блока-------------------------------------------- */
+
+@media only screen and (max-width: 576px) {
+    .three h3 {
+        margin: 50px 0 0 0;
+        align-items: center;
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    .three p {
+        width: 100%;
+        margin: 20px 50px 0 0;
+        font-size: 14px;
+    }
+
+    .three .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .three .col-5,
+    .three .col-7 {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .three h3 {
+        margin: 50px 0 0 0;
+        align-items: center;
+        font-size: 22px;
+    }
+
+    .three p {
+        width: 100%;
+        margin: 48px 0px 0 0;
+        font-size: 13px;
+    }
+
+    .three .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .three h3 {
+        margin: 40px 0 0 5px;
+
+    }
+
+    .three p {
+        width: 80%;
+        margin: 40px 100px 0 35px;
+    }
+
+
+    .three .row {
+        flex-direction: row;
+
+    }
+
+    .three .col-5 {
+        width: 30%;
+    }
+
+    .three .col-7 {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .three h3 {
+        font-size: 36px;
+        margin-left: 90px;
+        margin-top: 150px;
+        letter-spacing: 0;
+    }
+
+    .three p {
+        width: 96%;
+        margin: 150px 100px 0 35px;
+        font-size: 16px;
+    }
+
+    .three .row {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .three .col-7 {
+        width: 84%;
+    }
+
+    .three .col-5 {
+        width: 49%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .three h3 {
+        margin-left: 178px;
+    }
+
+    .three p {
+
+        margin: 150px 100px 0 110px;
+    }
+}
+
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------Четвертый блок----------------------------------------- */
+
+.four {
+    text-align: center;
+}
+
+.four h3 {
+    text-align: right;
+    color: #fff;
+    font-family: 'Gilroy';
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 48px 50px 0px 0;
+}
+
+.four p {
+    text-align: right;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.8;
+
+    margin: 8px 35px 0;
+
+}
+
+.img-mask-group {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    text-align: right;
+    margin: 100px 0px 50px;
+    justify-content: center;
+}
+
+.img-mask-group img {
+    max-width: 100%;
+}
+
+.four .img-mask-group {
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.four .container .img {
+    position: relative;
+}
+
+.title,
+.text {
+    position: absolute;
+    margin-top: 48px;
+    margin-left: 620px;
+}
+
+
+/* -----------------------------------Адаптив для Четвертого блока------------------------------------ */
+
+@media only screen and (max-width: 576px) {
+    .four h3 {
+        margin: 8px 35px 0px 0px;
+        font-size: 12px;
+    }
+
+    .four p {
+        font-size: 8px;
+        margin: 8px 35px 0 0;
+    }
+
+    .img-mask-group {
+        margin: 50px 0px 0px;
+    }
+
+    .title {
+        margin-left: 135px;
+        margin-top: 6px;
+    }
+
+}
+
+@media only screen and (min-width: 576px) {
+    .four h3 {
+        margin: 10px 35px 0 0;
+        font-size: 20px;
+    }
+
+    .img-mask-group {
+        margin: 50px 0px 0px;
+    }
+
+    .title {
+        margin-left: 290px;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .four h3 {
+        margin: 10px 35px 0 0;
+        font-size: 24px;
+    }
+
+    .title {
+        margin-left: 400px;
+        margin-top: 48px;
+    }
+
+    .img-mask-group {
+        margin: 60px 0px 0px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .four h3 {
+        margin: 8px 110px 0 0;
+        font-size: 28px;
+    }
+
+    .four p {
+        font-size: 16px;
+        margin: 8px 110px 0;
+    }
+
+    .title {
+        margin-left: 600px;
+    }
+
+    .img-mask-group {
+        margin: 100px 0px 50px;
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------Пятый блок--------------------------------------------- */
+
+.five h5 {
+    font-family: 'Gilroy';
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 24px 32px 4px;
+}
+
+.five p {
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-left: 24px;
+}
+
+.five .card {
+    max-width: 422px;
+    max-height: 417px;
+    --bs-card-bg: none;
+    border: none;
+    margin: 70px 0px 10px;
+
+}
+
+.five .row {
+    display: flex;
+    max-width: 940px !important;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+}
+
+/* -----------------------------------Адаптив для Пятого блока------------------------------------ */
+
+@media only screen and (max-width: 576px) {
+    .five .card {
+        margin-top: 40px;
+    }
+
+    .five .row {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .five .card {
+        margin-top: 50px;
+    }
+
+    .five .row {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .five .card {
+        margin-top: 60px;
+    }
+
+    .five .row {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .five .card {
+        margin-top: 70px;
+        padding: 0;
+    }
+
+    .five .row {
+        justify-content: space-between;
+    }
+
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* --------------------------------------------Шестой блок--------------------------------------------- */
+
+.six {
+    background: #5A98D0;
+    border-radius: 200px 0px 0px 0px;
+    min-width: 100%;
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+}
+
+.six h3,
+.six p {
+    color: #fff;
+    margin: 96px 0 111px 5px;
+}
+
+TABLE {
+    max-width: 940px;
+    border-collapse: collapse;
+    border: 2px solid white;
+    --bs-border-color: #5a98d0;
+}
+
+TD,
+TH {
+    padding: 41px 42px 41px 46px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-weight: normal;
+}
+
+tr {
+    color: #F2F2F2;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+}
+
+.z001 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 935px;
+    height: 128px;
+
+
+    margin: auto;
+    opacity: 1;
+    margin-top: 123px;
+    margin-bottom: 125px;
+}
+
+.table>:not(caption)>*>* {
+    padding: 1.5rem 1.5rem;
+}
+
+.six-one {
+    background: #316099;
+    border-radius: 0px 200px 0px 0px;
+    max-width: 100%;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.six-one .footer,
+.six-one .six-one-txt {
+    margin-left: 50px;
+
+}
+
+.six-one .six-one-txt h3 {
+    font-family: 'Gilroy';
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 91px 0px 32px 193px;
+    max-width: 317px;
+    font-weight: 500;
+}
+
+.six .six-one-txt p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+    opacity: 0.6;
+    max-width: 460px;
+    margin-left: 190px;
+    margin-bottom: 96px;
+
+}
+
+.six-one .row {
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    border-bottom: 1px solid #fff;
+    max-width: 75%;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.six-one .btn {
+    width: 220px;
+    height: 56px;
+}
+
+footer .a {
+    display: flex;
+    margin-left: 100px;
+}
+
+footer .a-p1 p {
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+footer .a-p2 p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 264px;
+    padding-left: 16px;
+    margin-top: 0;
+}
+
+.footer h2 {
+    color: #fff;
+    font-family: 'Gilroy';
+    font-size: 28px;
+}
+
+.footer h4 {
+    font-family: 'Gilroy';
+    font-size: 20px;
+    color: #fff;
+}
+
+.m-0 {
+    margin-top: 32px !important;
+}
+
+.footer ul li {
+    list-style: none;
+    padding-top: 16px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    align-items: center
+}
+
+.footer .logo h2 {
+    padding-left: 16px;
+}
+
+footer .copyright p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.4;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+.text-white-50 {
+    margin-top: 0px;
+}
+
+.col-lg-5 {
+    flex: 0 0 auto;
+    width: 32.666667%;
+}
+
+
+/* -----------------------------------Адаптив для шестого блока------------------------------------ */
+
+
+@media only screen and (max-width: 576px) {
+    .six {
+        margin-top: 50px;
+    }
+
+    .six h3 {
+        margin-left: 9px;
+        font-size: 19px;
+        margin: 85px 0 0 5px;
+    }
+
+    .six p {
+        font-size: 11px;
+
+        padding-left: 10px;
+        margin: 15px 0 0 -5px;
+    }
+
+    .table>:not(caption)>*>* {
+        padding: 1rem 1rem;
+    }
+
+    tr {
+        font-size: 5px;
+        line-height: 10px;
+    }
+
+    .table {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .z001 {
+        width: 300px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .six-one-txt {
+        margin-left: 20px;
+    }
+
+    .six-one {
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+
+    .six-one .six-one-txt h3 {
+        margin: 70px 30px 15px -20px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .six .six-one-txt p {
+        font-size: 8px;
+        line-height: 14px;
+        margin-left: -30px;
+        margin-bottom: 20px;
+    }
+
+    .six-one .row {
+        flex-direction: column;
+    }
+
+    .footer .logo {
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+
+    .six-one .footer {
+        margin-left: 0;
+    }
+
+    footer .a {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    footer .a-p2 p {
+        font-size: 10px;
+    }
+
+    .col-lg-5 {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .footer h2 {
+        font-size: 20px;
+    }
+
+    .footer h4 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .footer ul li {
+        padding-top: 0;
+
+    }
+
+    .footer h4,
+    .footer h2,
+    .six h3 {
+        font-weight: 500;
+    }
+
+    .pt-5 {
+        margin-top: 1rem !important;
+    }
+
+    .six-one .col-8 {
+        width: 100%;
+    }
+
+    .six-one .six-one-txt {
+        margin-left: 20px;
+    }
+
+    .six-one .btn p {
+        font-size: 12px;
+    }
+
+    .footer ul li a {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .col-lg-4 {
+        margin-top: 20px;
+    }
+
+    footer .copyright p {
+        margin-left: -10px;
+    }
+
+    .m-0 {
+        margin-top: 14px !important;
+    }
+
+    .six-one .btn {
+        width: 100px;
+        padding: auto;
+    }
+
+    .six-one .col-4 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .col-lg-4 {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    tr {
+        font-size: 9px;
+        line-height: 20px;
+    }
+
+    .table {
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .z001 {
+        width: 576px;
+        margin-top: 0px;
+        margin-bottom: 90px;
+    }
+
+    .six p{
+        margin: 0;
+    }
+    .footer {
+        max-width: 100%;
+    }
+
+    .six .col-7 {
+        width: 52%;
+    }
+
+    .six-one .btn {
+        width: 150px;
+    }
+
+    .six h3 {
+        margin: 75px 18px;
+    }
+
+    .six-one {
+        margin-right: 50px;
+    }
+
+    .six-one .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .six-one .six-one-txt h3 {
+        margin: 91px 0px 32px 0px;
+    }
+
+    .six-one .six-one-txt p {
+        margin-bottom: 96px;
+        margin-left: -9px;
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    footer .a {
+        display: flex;
+        margin-left: 2px;
+    }
+
+    .footer .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .footer .logo {
+        margin-left: 0;
+        flex-wrap: nowrap
+    }
+
+    .six-one .footer,
+    .six-one .six-one-txt {
+        margin-left: 15px;
+    }
+
+    .col-lg-5 {
+        width: 46%;
+    }
+
+    .col-lg-4 {
+        width: 27%;
+    }
+
+    .col-lg-3 {
+        width: 33%;
+    }
+
+    .footer p {
+        color: #fff;
+        margin: 96px 0 10px 5px;
+    }
+
+    footer .copyright p {
+        margin-left: -15px;
+    }
+
+    .mt-sm-3,
+    .mt-sm-4 {
+        margin-top: 0.5rem !important;
+    }
+
+    .footer .logo h2 {
+        font-size: 18px;
+    }
+
+    .footer ul li a {
+        font-size: 12px;
+    }
+
+    .footer h4 {
+        font-size: 16px;
+    }
+
+    footer .a-p2 p {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    tr {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .table {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .z001 {
+        width: 650px;
+        margin-top: 0px;
+        margin-bottom: 90px;
+    }
+
+    .three .col-7,
+    .six .col-7 {
+        width: 70%;
+    }
+
+    .six h3,
+    .six p {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin: 0;
+
+    }
+
+    .footer {
+        max-width: 100%;
+    }
+
+    .six-one .btn {
+        width: 180px;
+    }
+
+    .six-one .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .six-one .six-one-txt h3 {
+        margin: 91px 0px 32px 0px;
+    }
+
+    .six-one .six-one-txt p {
+        margin-bottom: 96px;
+        margin-left: 2px;
+
+        margin-top: 0;
+    }
+
+    footer .a {
+        display: flex;
+        margin-left: 2px;
+    }
+
+    .footer .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .footer .logo {
+        margin-left: 0;
+        flex-wrap: nowrap
+    }
+
+    .six-one .footer,
+    .six-one .six-one-txt {
+        margin-left: 15px;
+    }
+
+    .col-lg-5 {
+        width: 46%;
+    }
+
+    .col-lg-4 {
+        width: 27%;
+    }
+
+    .col-lg-3 {
+        width: 33%;
+    }
+
+    .footer p {
+        color: #fff;
+        margin: 96px 0 10px 5px;
+    }
+
+    footer .copyright p {
+        margin-left: -15px;
+    }
+
+    .mt-sm-3,
+    .mt-sm-4 {
+        margin-top: 0.5rem !important;
+    }
+
+    .six h3 {
+        margin: 96px 20px 111px 35px;
+    }
+
+    .six p {
+        margin-bottom: 0;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    tr {
+        font-size: 20px;
+        line-height: 46px;
+    }
+
+    .z001 {
+        width: 935px;
+        margin-top: 0px;
+        margin-bottom: 125px;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .six-one .btn {
+        width: 220px;
+    }
+
+    .six .col-8 {
+        width: 49%;
+    }
+
+    .col-lg-5 {
+        width: 31%;
+    }
+
+    .col-lg-4 {
+        width: 30%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    footer .copyright p {
+        margin-left: 75px;
+    }
+
+    .footer {
+        max-width: 100%;
+    }
+
+    .six h3 {
+        margin: 96px 0 111px -14px;
+    }
+
+    .six p {
+        margin-bottom: 0;
+    }
+
+    .six-one {
+        margin-right: 50px;
+    }
+
+    .six-one .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .six-one .six-one-txt h3 {
+        margin: 91px 0px 32px 0px;
+    }
+
+    .six-one .six-one-txt p {
+        margin-bottom: 96px;
+        margin-left: 2px;
+
+        margin-top: 0;
+    }
+
+    footer .a {
+        display: flex;
+        margin-left: 2px;
+    }
+
+    .footer .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .footer .logo {
+        margin-left: 0;
+        flex-wrap: nowrap
+    }
+
+    .six-one .footer,
+    .six-one .six-one-txt {
+        margin-left: 15px;
+    }
+
+    .footer p {
+        color: #fff;
+        margin: 96px 0 10px 5px;
+    }
+
+    footer .copyright p {
+        margin-left: -15px;
+    }
+
+    .mt-sm-3,
+    .mt-sm-4 {
+        margin-top: 0.5rem !important;
+    }
+
+    .footer .logo h2 {
+        font-size: 28px;
+    }
+
+    .footer ul li a {
+        font-size: 16px;
+    }
+
+    .footer h4 {
+        font-size: 20px;
+    }
+
+    footer .a-p2 p {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    tr {
+        font-size: 20px;
+        line-height: 46px;
+    }
+
+    .z001 {
+        width: 935px;
+        margin-top: 0px;
+        margin-bottom: 125px;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .six h3 {
+        margin: 96px 0 111px -20px;
+    }
+
+    .six .col-4 {
+        width: 22%;
+    }
+
+    .six .col-8 {
+        width: 49%;
+    }
+
+    .col-lg-4 {
+        width: 23%;
+    }
+
+    .col-lg-3 {
+        width: 20%;
+    }
+
+    footer .copyright p {
+        margin-left: 165px;
+    }
+
+}
